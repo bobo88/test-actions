@@ -49,6 +49,7 @@ jobs:
         asset_path: ./release.tgz
         asset_name: release.tgz
         asset_content_type: application/x-tgz
+        allowUpdates: true
 
     # 部署到服务器
     - name: Deploy
@@ -74,8 +75,8 @@ jobs:
         # 下载项目生成依赖
         # 然后通过 pm2 进行管理启动
         script: |
-          cd /usr/local/nginx/web/nuxt-web
-          wget https://github.com/bobo88/test-actions/releases/latest/download/release.tgz -O release.tgz
+          cd /usr/local/nginx/web/react
+          wget https://github.com/bobo88/ycy88/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
 
 
