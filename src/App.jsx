@@ -36,8 +36,6 @@ class App extends React.Component {
                 <p className='desc'>今天的天气真 <span className={ isHot ? 'red' : 'green' }>{ isHot ? '炎热' : '凉爽'}</span></p>
                 <button onClick={ this.changeState.bind(this) } style={{ margin: '0 20px 0 0' }}>changeState</button>
                 <input type="text" style={{marginRight: '20px'}} />
-                <Button type="primary">Button 1</Button>
-                <Button type="primary">Button 2</Button>
                 <Button type="primary">Button 6</Button>
                 <Button type="primary">Button 8</Button>
             </div>
