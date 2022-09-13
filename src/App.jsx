@@ -39,6 +39,8 @@ class App extends React.Component {
                 <Button type="primary">Button 1</Button>
                 <Button type="primary">Button 2</Button>
                 <Button type="primary">Button 3</Button>
+                <Button type="primary">Button 6</Button>
+                <Button type="primary">Button 8</Button>
             </div>
         );
     }
