@@ -1,27 +1,16 @@
-name: Publish And Deploy Demo
-on:
-  # 监听 push 操作
-  push:
-    branches:
-      # main 分支
-      - main
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-
-    # 下载源码
-    - name: Checkout
-      uses: actions/checkout@master
-      # 下载本次 tag标签标记 commitId代码
 
 
 
-    # 打包构建
-    - name: Build
-      uses: actions/setup-node@master
-    #- run: yarn
-    #- run: yarn build
+
+
+
+
+
+
+
+# ===================================================
+
+
     - run: tar -zcvf release.tgz build
     # 基于这次的tag标签来下载依赖 打包 然后把 后续几个文件生成  tgz 压缩包
 
@@ -49,6 +38,7 @@ jobs:
         asset_path: ./release.tgz
         asset_name: release.tgz
         asset_content_type: application/x-tgz
+        allowUpdates: true
 
     # 部署到服务器
     - name: Deploy
@@ -73,9 +63,7 @@ jobs:
         # 解压
         # 下载项目生成依赖
         # 然后通过 pm2 进行管理启动
-        script: |
-          cd /usr/local/nginx/web/nuxt-web
-          wget https://github.com/bobo88/test-actions/releases/latest/download/release.tgz -O release.tgz
+        script: 
+          cd /usr/local/nginx/web/react
+          wget https://github.com/bobo88/ycy88/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
-
-
