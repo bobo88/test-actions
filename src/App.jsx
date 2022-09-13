@@ -31,7 +31,7 @@ class App extends React.Component {
         const { isHot } = this.state;
         return (
             <div>
-                <h1>Hello, React! (我来自GitHub actions 自动部署 6888888</h1>
+                <h1>Hello, React! (我来自GitHub actions 自动部署 12345678</h1>
                 <p className={ isHot ? 'red' : 'green' }>{ msg }</p>
                 <p className='desc'>今天的天气真 <span className={ isHot ? 'red' : 'green' }>{ isHot ? '炎热' : '凉爽'}</span></p>
                 <button onClick={ this.changeState.bind(this) } style={{ margin: '0 20px 0 0' }}>changeState</button>
