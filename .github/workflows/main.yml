@@ -2,9 +2,11 @@ name: Publish And Deploy Demo
 on:
   # 监听 push 操作
   push:
-    branches:
+    #branches:
       # main 分支
-      - main
+      #- main
+    tags:        
+      - v.*
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
