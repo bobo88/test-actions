@@ -6,7 +6,7 @@ const App = function () {
     const [isHot, setIsHot] = useState(false);
 
     return (
-        <div>
+        <div className='main-wrap'>
             <h1>Home page</h1>
             <p className={ isHot ? 'red' : 'green' }>{ msg }</p>
             <p className='desc'>今天的天气真 <span className={ isHot ? 'red' : 'green' }>{ isHot ? '炎热' : '凉爽'}</span></p>

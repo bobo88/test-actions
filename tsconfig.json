@@ -22,7 +22,7 @@
       "noFallthroughCasesInSwitch": true,// 防止switch语句贯穿(即如果没有break语句后面不会执行)
       "baseUrl": "./src" // 解析非相对模块的基地址，默认是当前目录
     },
-    "include": ["**/*.ts", "**/*.tsx", "src/router/index.jsx"],
+    "include": ["**/*.ts", "**/*.tsx"],
     "exclude": ["./node_modules"]
   }
   

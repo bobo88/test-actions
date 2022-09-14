@@ -10,7 +10,7 @@ const App = function () {
     const [isHot, setIsHot] = useState(false);
 
     return (
-        <div>
+        <div className='main-wrap'>
             <Header />
             <h1>Hello, React! (我来自GitHub actions 自动部署 888888)</h1>
             <p className={ isHot ? 'red' : 'green' }>{ msg }</p>

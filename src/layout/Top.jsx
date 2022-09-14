@@ -19,11 +19,6 @@ const Top = () => {
             <Link to='react' className="link">React</Link>
             <Link to='other' className="link">Other</Link>
             <Link to='about-me' className="link">About me</Link>
-            {/* <a className="link" href="/home">Home</a>
-            <a className="link" href="/vue">Vue</a>
-            <a className="link" href="/react">React</a>
-            <a className="link" href="/other">Other</a>
-            <a className="link" href="/about-me">About me</a> */}
           </Col>
         </Row>
       </div>
