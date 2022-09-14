@@ -29,8 +29,8 @@ jobs:
     # 基于这次的tag标签来下载依赖 打包 然后把 后续几个文件生成  tgz 压缩包
 
     # 发布 Release
-    - name: Create Release ${{ tag }}
-      id: create_release ${{tag}}
+    - name: Create Release
+      id: create_release
       uses: actions/create-release@master
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
