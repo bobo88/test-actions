@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 const App = function () {
-    const [msg, setMsg] = useState('我是msg信息688');
+    const [msg] = useState('我是msg信息688');
     const [isHot, setIsHot] = useState(false);
 
     return (

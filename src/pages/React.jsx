@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'antd';
 
 const App = function () {
-    const [msg, setMsg] = useState('我是msg信息688');
+    const [msg] = useState('我是msg信息688');
     const [isHot, setIsHot] = useState(false);
 
     return (
