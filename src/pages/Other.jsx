@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import { Button, Timeline } from 'antd';
 
+// store
+import { useSelector } from 'react-redux'
+
 const App = function () {
     const [msg] = useState('Nginx 负载均衡 Test');
     // const [isHot, setIsHot] = useState(false);
+    const counter = useSelector(state => state.counter.value);
 
     return (
         <div className='main-wrap'>
-            <h1>Other page</h1>
+            <h1>Other page - { counter }</h1>
             <Timeline>
                 <Timeline.Item>
                     <Button type="primary">{ msg }</Button>

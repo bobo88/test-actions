@@ -11,7 +11,9 @@ const Top = () => {
       <div>
         <Row>
           <Col span={6}>
-            <FunctionOutlined style={{ fontSize: '32px', color: '#fff' }} />WEB-front-end
+            <Link to='/' className="link">
+              <FunctionOutlined style={{ fontSize: '32px', color: '#fff' }} />WEB-front-end
+            </Link>
           </Col>
           <Col span={18}>
             <Link to='home' className="link">Home</Link>
