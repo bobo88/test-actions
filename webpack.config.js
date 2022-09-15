@@ -1,45 +1,73 @@
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+// const APP_DIR = path.resolve(__dirname, '../src');
+// const OUPUT_DIR = path.resolve(__dirname, '../dist');
+
 module.exports = {
   devServer: {
     historyApiFallback: true
   },
-    // //...
-    // module: {
-    //     noParse: /jquery|lodash/,
-    // },
-    // optimization: {
-    //     //...
-    //     splitChunks: {
-    //         chunks: 'all',
-    //         minSize: 30000,         //字节 引入的文件大于30kb才进行分割
-    //         minChunks: 1,           //模块至少使用次数
-    //         automaticNameDelimiter: '~', //缓存组和生成文件名称之间的连接符
-    //         name: true,
-    //         cacheGroups: {
-    //           vender: {
-    //             name: 'vendor',
-    //             test: /[\\/]node_modules[\\/]/,
-    //             chunks: 'all',
-    //             priority: 20          
-    //           },
-    //           react: {
-    //             name: 'react',
-    //             test: (module) => /react|redux/.test(module.context),
-    //             chunks: 'initial',
-    //             priority: 11
-    //           },
-    //           lodash: {
-    //             name: 'lodash',
-    //             test: (module) => /lodash/.test(module.context),
-    //             chunks: 'initial',
-    //             priority: 15 
-    //           },
-    //           antdm: {
-    //             name: 'antd-mobile',
-    //             test: (module) => /antd-mobile/.test(module.context),
-    //             chunks: 'initial',
-    //             priority: 12            
-    //           }
-    //         }
-    //     }
-    // }
-}
+  // entry: {
+  //   app: APP_DIR,
+  // },
+  // output: {
+  //   path: OUPUT_DIR,
+  //   filename: '[name].[contenthash].js',
+  // },
+  resolve: {
+    modules: [path.resolve(__dirname, '../node_modules')],
+    alias: {
+      // '@/images': path.resolve(__dirname, '../src/assets/images'),
+      // '@/utils': path.resolve(__dirname, '../src/utils'),
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
+        test: /\.(scss|css)$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+          'postcss-loader',
+        ],
+      },
+      {
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+        type: 'asset/inline',
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Demo 688',
+      template: path.resolve(__dirname, './public/index.html'),
+      filename: 'index.html',
+    }),
+  ],
+};
