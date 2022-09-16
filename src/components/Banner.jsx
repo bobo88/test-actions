@@ -14,7 +14,7 @@ const Banner = () => {
       </div>
       <div className="item">
         <img src={react} alt="React" />
-        <p className="desc">REACT</p>
+        <p className="desc">REACT / ANTD</p>
       </div>
       <div className="item">
         <img src={nginx} alt="Nginx" />
