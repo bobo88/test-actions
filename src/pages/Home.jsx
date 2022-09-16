@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
+import Banner from '../components/Banner'
 import Counter from './Counter'
 
 const App = function () {
@@ -8,6 +9,7 @@ const App = function () {
 
     return (
         <div className='main-wrap'>
+            <Banner />
             <h1>Home page</h1>
             <Counter />
             <p className={ isHot ? 'red' : 'green' }>{ msg }</p>
