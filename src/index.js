@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 
 // React-redux
@@ -22,11 +22,12 @@ import {
 
 // 布局 & 路由页面
 import Layout from './layout/Layout'
-import Home from './pages/Home'
-import VuePage from './pages/vue/Vue'
-import ReactPage from './pages/react/React'
-import OtherPage from './pages/other/Other'
-import About from './pages/about/About'
+// 懒加载路由
+const Home = lazy(() => import('./pages/Home'));
+const VuePage = lazy(() => import('./pages/vue/Vue'));
+const ReactPage = lazy(() => import('./pages/react/React'));
+const OtherPage = lazy(() => import('./pages/other/Other'));
+const About = lazy(() => import('./pages/about/About'));
 
 const root = createRoot(document.getElementById("root"));
 
@@ -36,18 +37,20 @@ let persistor = persistStore(store);
 root.render(
     <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Layout />}>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/home" element={<Home />} />
-                        <Route path="/vue" element={<VuePage />} />
-                        <Route path="/react" element={<ReactPage />} />
-                        <Route path="/other" element={<OtherPage />} />
-                        <Route path="/about-me" element={<About />} />
-                    </Route>
-                </Routes>
-            </BrowserRouter>
+            <Suspense fallback={<h2>Loading..</h2>}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Layout />}>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/home" element={<Home />} />
+                            <Route path="/vue" element={<VuePage />} />
+                            <Route path="/react" element={<ReactPage />} />
+                            <Route path="/other" element={<OtherPage />} />
+                            <Route path="/about-me" element={<About />} />
+                        </Route>
+                    </Routes>
+                </BrowserRouter>
+            </Suspense>
         </PersistGate>
     </Provider>
 );

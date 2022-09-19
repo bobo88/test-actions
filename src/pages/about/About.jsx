@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
+import './about.scss'
 
 const App = function () {
     const [msg] = useState('我是msg信息688');
     const [isHot, setIsHot] = useState(false);
 
     return (
-        <div className='main-wrap'>
+        <div className='main-wrap about-box'>
             <h1>About page</h1>
             <p className={ isHot ? 'red' : 'green' }>{ msg }</p>
             <p className='desc'>今天的天气真 <span className={ isHot ? 'red' : 'green' }>{ isHot ? '炎热' : '凉爽'}</span></p>
