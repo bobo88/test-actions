@@ -23,10 +23,10 @@ import {
 // 布局 & 路由页面
 import Layout from './layout/Layout'
 import Home from './pages/Home'
-import VuePage from './pages/Vue'
-import ReactPage from './pages/React'
-import OtherPage from './pages/Other'
-import About from './pages/About'
+import VuePage from './pages/vue/Vue'
+import ReactPage from './pages/react/React'
+import OtherPage from './pages/other/Other'
+import About from './pages/about/About'
 
 const root = createRoot(document.getElementById("root"));
 

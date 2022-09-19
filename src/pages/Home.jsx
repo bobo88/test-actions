@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'antd';
 import Banner from '../components/Banner'
-import Counter from './Counter'
+import Counter from '../components/Counter'
 
 import { useParams } from 'react-router-dom';
 
