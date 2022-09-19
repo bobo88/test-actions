@@ -16,7 +16,7 @@ const Top = () => {
             </Link>
           </Col>
           <Col span={18}>
-            <Link to='home' className="link">Home</Link>
+            <Link to='/home/testabc' className="link">Home</Link>
             <Link to='vue' className="link">Vue</Link>
             <Link to='react' className="link">React</Link>
             <Link to='other' className="link">Other</Link>

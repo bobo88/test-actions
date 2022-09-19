@@ -8,7 +8,7 @@ export default function Bottom() {
         <span className="mr30">Github: <a href="https://github.com/bobo88" rel="noreferrer" target="_blank">https://github.com/bobo88</a></span>
         <span>Email: yuanboi88@163.com</span>
       </p>
-      <p className="copyright">Copyright © www.ycy88.com All Rights Reserved. 备案号：粤ICP备*******号</p>
+      <p className="copyright">Copyright © www.ycy88.com All Rights Reserved. 备案号：<a href="http://beian.miit.gov.cn" rel="noreferrer" target="_blank">粤ICP备2022114378号</a></p>
     </div>
   )
 }

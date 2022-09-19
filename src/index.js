@@ -40,7 +40,7 @@ root.render(
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route path="/" element={<Home />} />
-                        <Route path="/home" element={<Home />} />
+                        <Route path="/home/:id" element={<Home />} />
                         <Route path="/vue" element={<VuePage />} />
                         <Route path="/react" element={<ReactPage />} />
                         <Route path="/other" element={<OtherPage />} />

@@ -3,10 +3,13 @@ import { Button } from 'antd';
 import Banner from '../components/Banner'
 import Counter from './Counter'
 
-const App = function () {
+import { useParams } from 'react-router-dom';
+
+const App = () => {
     const [msg] = useState('我是msg信息688');
     const [isHot, setIsHot] = useState(false);
-
+    const params = useParams();
+    console.log(666, params, params.id)
     return (
         <div className='main-wrap'>
             <Banner />
