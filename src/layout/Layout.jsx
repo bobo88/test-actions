@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout } from 'antd';
+import { Layout, BackTop } from 'antd';
 
 import {
   Outlet
@@ -30,6 +30,7 @@ const LayoutCustom = (props) =>{
           <Bottom />
         </Footer>
 
+        <BackTop visibilityHeight={50} />
       </Layout>
     </>
   )
