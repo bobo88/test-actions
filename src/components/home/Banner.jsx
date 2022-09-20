@@ -1,9 +1,9 @@
 import React from "react";
 import { Carousel } from 'antd';
-import vue_element from '../assets/image/vue_element.png'
-import react from '../assets/image/react.png'
-import nginx from '../assets/image/nginx.png'
-import echarts from '../assets/image/echarts.png'
+import vue_element from '@/assets/image/vue_element.png'
+import react from '@/assets/image/react.png'
+import nginx from '@/assets/image/nginx.png'
+import echarts from '@/assets/image/echarts.png'
 
 const Banner = () => {
   return (

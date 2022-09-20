@@ -9,7 +9,7 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { persistStore } from 'redux-persist'
 
 // 全局样式
-import './assets/scss/index.scss';
+import '@/assets/scss/index.scss';
 
 // React-router
 import {
@@ -21,13 +21,15 @@ import {
 } from "react-router-dom";
 
 // 布局 & 路由页面
-import Layout from './layout/Layout'
+import Layout from '@/layout/Layout'
+// 全局loading组件
+import Loading from '@/components/loading/loading';
 // 懒加载路由
-const Home = lazy(() => import('./pages/Home'));
-const VuePage = lazy(() => import('./pages/vue/Vue'));
-const ReactPage = lazy(() => import('./pages/react/React'));
-const OtherPage = lazy(() => import('./pages/other/Other'));
-const About = lazy(() => import('./pages/about/About'));
+const Home = lazy(() => import('@/pages/Home'));
+const VuePage = lazy(() => import('@/pages/vue/Vue'));
+const ReactPage = lazy(() => import('@/pages/react/React'));
+const OtherPage = lazy(() => import('@/pages/other/Other'));
+const About = lazy(() => import('@/pages/about/About'));
 
 const root = createRoot(document.getElementById("root"));
 
@@ -37,7 +39,7 @@ let persistor = persistStore(store);
 root.render(
     <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
-            <Suspense fallback={<h2>Loading..</h2>}>
+            <Suspense fallback={<Loading />}>
                 <BrowserRouter>
                     <Routes>
                         <Route path="/" element={<Layout />}>

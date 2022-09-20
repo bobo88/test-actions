@@ -1,5 +1,4 @@
 import React from "react";
-// import github from '../assets/image/github.webp'
 
 export default function Bottom() {
   return (

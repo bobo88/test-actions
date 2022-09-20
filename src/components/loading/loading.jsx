@@ -1,8 +1,11 @@
 import React from "react";
+import { Spin } from 'antd';
 
 const Loading = () => {
   return (
-    <h1>Loading ......</h1>
+    <div className="loading-box">
+        <Spin size="large" />
+    </div>
   )
 };
 export default Loading;

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.5",
     "@reduxjs/toolkit": "^1.8.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -27,14 +28,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "serve": "dotenv -e .env.dev react-scripts start",
-    "dev": "dotenv -e .env.dev react-scripts start",
-    "start": "dotenv -e .env.dev react-scripts start",
-    "build": "dotenv -e .env.prod react-scripts build",
-    "build:dev": "dotenv -e .env.dev react-scripts build",
-    "build:test": "dotenv -e .env.test react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "serve": "dotenv -e .env.dev craco start",
+    "dev": "dotenv -e .env.dev craco start",
+    "start": "dotenv -e .env.dev craco start",
+    "build": "dotenv -e .env.prod craco build",
+    "build:dev": "dotenv -e .env.dev craco build",
+    "build:test": "dotenv -e .env.test craco build",
+    "test": "craco test",
+    "eject": "craco eject"
   },
   "eslintConfig": {
     "extends": [
