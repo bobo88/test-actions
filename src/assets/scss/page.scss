@@ -73,6 +73,24 @@
     }
 }
 
+.top-box {
+    color: #fff;
+    font-size: 16px;
+    .link {
+        display: inline-block;
+        margin-right: 20px;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        &.active {
+            font-weight: bold;
+            text-shadow: 4px 4px 8px hsl(220deg, 100%, 80%);
+        }
+    }
+}
 .main-wrap {
+    margin: 0 auto;
+    padding: 20px;
+    // width: 1200px;
     min-height: 900px;
 }

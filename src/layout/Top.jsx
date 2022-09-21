@@ -2,7 +2,8 @@ import React from "react";
 import { Col, Row, } from 'antd';
 import { FunctionOutlined } from '@ant-design/icons';
 import {
-  Link
+  Link,
+  NavLink,
 } from "react-router-dom";
 
 const Top = () => {
@@ -16,11 +17,11 @@ const Top = () => {
             </Link>
           </Col>
           <Col span={18}>
-            <Link to='home' className="link">Home</Link>
-            <Link to='vue' className="link">Vue</Link>
-            <Link to='react' className="link">React</Link>
-            <Link to='other' className="link">Other</Link>
-            <Link to='about-me' className="link">About me</Link>
+            <NavLink to='home' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Home</NavLink>
+            <NavLink to='vue' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Vue</NavLink>
+            <NavLink to='react' className={(navData) => (navData.isActive ? 'active link' : 'link')}>React</NavLink>
+            <NavLink to='other' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Other</NavLink>
+            <NavLink to='about-me' className={(navData) => (navData.isActive ? 'active link' : 'link')}>About me</NavLink>
           </Col>
         </Row>
       </div>

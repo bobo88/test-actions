@@ -4,22 +4,6 @@
 @import "page"; /* 页面结构 */
 @import "reset"; /* 第三方插件 */
 
-.top-box {
-    color: #fff;
-    font-size: 16px;
-    .link {
-        display: inline-block;
-        margin-right: 20px;
-        color: #fff;
-        font-size: 16px;
-        text-decoration: none;
-    }
-}
-.main-wrap {
-    margin: 0 auto;
-    padding: 20px;
-    // width: 1200px;
-}
 
 .desc {
     color: #000;

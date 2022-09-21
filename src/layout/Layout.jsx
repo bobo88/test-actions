@@ -2,7 +2,8 @@ import React from "react";
 import { Layout, BackTop } from 'antd';
 
 import {
-  Outlet
+  Outlet,
+  useOutlet
 } from "react-router-dom";
 
 // 布局组件
@@ -13,7 +14,8 @@ import Bottom from './Bottom'
 const { Header, Footer, Content } = Layout;
 
 const LayoutCustom = (props) =>{
-  console.log(6666, props)
+  const xx = useOutlet();
+  console.log(6666, props, xx)
   return (
     <>
       <Layout>
@@ -23,6 +25,7 @@ const LayoutCustom = (props) =>{
         </Header>
 
         <Content>
+          {/* 指定路由的位置 */}
           <Outlet />
         </Content>
 
