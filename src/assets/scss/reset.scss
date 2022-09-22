@@ -12,3 +12,16 @@
         font-weight: bold;
     }
 }
+
+@media screen and (max-width:600px) {
+    .ant-layout-header {
+        padding: 0 10px;
+    }
+    .logo-desc {
+        display: none;
+    }
+    .top-box .link {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+}

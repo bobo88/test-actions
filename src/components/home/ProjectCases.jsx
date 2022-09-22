@@ -19,18 +19,18 @@ const Skills = () => {
       <Divider orientation="left">Project cases</Divider>
 
       <Row gutter={16} justify="space-around">
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 6, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
           <div className="card-item mb20">
             <Card
               hoverable
               style={{ width: 240 }}
               cover={<img alt="example" className="case-item-img" src={VueTsImg} />}
             >
-              <Meta title="Vue3/vite/TS" description="www.instagram.com" />
+              <Meta title="Vue3/vite/TS" description="https://github.com/bobo88" />
             </Card>
           </div>
         </Col>
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 6, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
           <a href="https://github.com/bobo88/test-actions" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -43,29 +43,29 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 6, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
           <div className="card-item mb20">
             <Card
               hoverable
               style={{ width: 240 }}
               cover={<img alt="example" className="case-item-img" src={EchartsImg} />}
             >
-              <Meta title="Vue2/Echarts" description="www.instagram.com" />
+              <Meta title="Vue2/Echarts" description="https://github.com/bobo88" />
             </Card>
           </div>
         </Col>
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 6, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
           <div className="card-item mb20">
             <Card
               hoverable
               style={{ width: 240 }}
               cover={<img alt="example" className="case-item-img" src={VueImg} />}
             >
-              <Meta title="Vue2-admin" description="www.instagram.com" />
+              <Meta title="Vue2-admin" description="https://github.com/bobo88" />
             </Card>
           </div>
         </Col>
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
           <a href="https://github.com/bobo88/nuxt-web" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -78,7 +78,7 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
           <a href="https://github.com/bobo88/project-basis/tree/main/rollup-basis" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -91,7 +91,7 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
           <a href="https://github.com/bobo88/yuanbo_web" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -104,7 +104,7 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
+        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
           <a href="https://github.com/bobo88/project-basis/tree/main/html2canvas-basis" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
