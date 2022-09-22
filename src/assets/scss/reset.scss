@@ -13,6 +13,14 @@
     }
 }
 
+.ant-card-meta-description {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @media screen and (max-width:600px) {
     .ant-layout-header {
         padding: 0 10px;
@@ -23,5 +31,15 @@
     .top-box .link {
         margin-right: 10px;
         font-size: 14px;
+    }
+    .card-item {
+        width: 160px !important;
+        .ant-card {
+            width: 100% !important;
+        }
+        .case-item-img {
+            // width: 160 !important;
+            height: 160px !important;
+        }
     }
 }

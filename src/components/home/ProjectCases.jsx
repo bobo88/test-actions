@@ -17,9 +17,9 @@ const Skills = () => {
   return (
     <div className="project-cases-box mb20">
       <Divider orientation="left">Project cases</Divider>
-
+      
       <Row gutter={16} justify="space-around">
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <div className="card-item mb20">
             <Card
               hoverable
@@ -30,7 +30,7 @@ const Skills = () => {
             </Card>
           </div>
         </Col>
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <a href="https://github.com/bobo88/test-actions" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -43,7 +43,7 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <div className="card-item mb20">
             <Card
               hoverable
@@ -54,7 +54,7 @@ const Skills = () => {
             </Card>
           </div>
         </Col>
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 6, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <div className="card-item mb20">
             <Card
               hoverable
@@ -65,7 +65,7 @@ const Skills = () => {
             </Card>
           </div>
         </Col>
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <a href="https://github.com/bobo88/nuxt-web" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -78,7 +78,7 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <a href="https://github.com/bobo88/project-basis/tree/main/rollup-basis" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -91,7 +91,7 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <a href="https://github.com/bobo88/yuanbo_web" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
@@ -104,7 +104,7 @@ const Skills = () => {
             </div>
           </a>
         </Col>
-        <Col className="gutter-row" span={{ xs: 12, sm: 6, md: 12, lg: 6 }}>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <a href="https://github.com/bobo88/project-basis/tree/main/html2canvas-basis" target='_blank' rel="noreferrer">
             <div className="card-item mb20">
               <Card
