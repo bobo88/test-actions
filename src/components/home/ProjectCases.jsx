@@ -10,6 +10,7 @@ import NuxtImg from '@/assets/image/cases/nuxt.png'
 import VueImg from '@/assets/image/cases/vue.png'
 import VueTsImg from '@/assets/image/cases/vue_ts.jpg'
 import EchartsImg from '@/assets/image/cases/echarts.jpg'
+import XmindImg from '@/assets/image/cases/xmind.png'
 
 const { Meta } = Card;
 
@@ -46,15 +47,17 @@ const Skills = () => {
           </a>
         </Col>
         <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
-          <div className="card-item mb20">
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" className="case-item-img" src={EchartsImg} />}
-            >
-              <Meta title="Vue2/Echarts" description="https://github.com/bobo88" />
-            </Card>
-          </div>
+          <a href="https://github.com/bobo88/project-basis/tree/main/echarts-basis" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={EchartsImg} />}
+              >
+                <Meta title="Vue2/Echarts" description="Echarts实现数据可视化" />
+              </Card>
+            </div>
+          </a>
         </Col>
         <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
           <div className="card-item mb20">
@@ -115,6 +118,32 @@ const Skills = () => {
                 cover={<img alt="example" className="case-item-img" src={HtmlImg} />}
               >
                 <Meta title="html2canvas" description="将HTML转成canvas图片" />
+              </Card>
+            </div>
+          </a>
+        </Col>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
+          <a href="https://github.com/bobo88/project-basis/tree/main/vue3-vite-app" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={VueTsImg} />}
+              >
+                <Meta title="Vite/Vue3/TS" description="搭建移动端的Vue3项目" />
+              </Card>
+            </div>
+          </a>
+        </Col>
+        <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>
+          <a href="https://github.com/bobo88/xmind-web" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={XmindImg} />}
+              >
+                <Meta title="技术思维导图" description="x-mind的技术类思维导图" />
               </Card>
             </div>
           </a>
