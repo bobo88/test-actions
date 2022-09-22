@@ -18,9 +18,9 @@ const Top = () => {
           </Col>
           <Col span={18}>
             <NavLink to='home' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Home</NavLink>
-            <NavLink to='vue' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Vue</NavLink>
-            <NavLink to='react' className={(navData) => (navData.isActive ? 'active link' : 'link')}>React</NavLink>
-            <NavLink to='other' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Other</NavLink>
+            <NavLink to='project-cases' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Project cases</NavLink>
+            {/* <NavLink to='react' className={(navData) => (navData.isActive ? 'active link' : 'link')}>React</NavLink>
+            <NavLink to='other' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Other</NavLink> */}
             <NavLink to='about-me' className={(navData) => (navData.isActive ? 'active link' : 'link')}>About me</NavLink>
           </Col>
         </Row>

@@ -4,3 +4,11 @@
 .ant-layout-footer {
     padding: 0;
 }
+.main-wrap {
+    .ant-divider-horizontal.ant-divider-with-text {
+        border-top-color: #2095cd;
+    }
+    .ant-divider-inner-text {
+        font-weight: bold;
+    }
+}
