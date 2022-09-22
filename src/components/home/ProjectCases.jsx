@@ -31,15 +31,17 @@ const Skills = () => {
           </div>
         </Col>
         <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 6, lg: 6 }}>
-          <div className="card-item mb20">
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" className="case-item-img" src={ReactImg} />}
-            >
-              <Meta title="React" description="www.instagram.com" />
-            </Card>
-          </div>
+          <a href="https://github.com/bobo88/test-actions" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={ReactImg} />}
+              >
+                <Meta title="React" description="React 博客项目" />
+              </Card>
+            </div>
+          </a>
         </Col>
         <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 6, lg: 6 }}>
           <div className="card-item mb20">
@@ -64,63 +66,58 @@ const Skills = () => {
           </div>
         </Col>
         <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
-          <div className="card-item mb20">
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" className="case-item-img" src={NuxtImg} />}
-            >
-              <Meta title="Nuxt" description="www.instagram.com" />
-            </Card>
-          </div>
+          <a href="https://github.com/bobo88/nuxt-web" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={NuxtImg} />}
+              >
+                <Meta title="Nuxt" description="Nuxt搭建 PC/M 适配项目" />
+              </Card>
+            </div>
+          </a>
         </Col>
         <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
-          <div className="card-item mb20">
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" className="case-item-img" src={RollupImg} />}
-            >
-              <Meta title="Rollup/Gulp" description="www.instagram.com" />
-            </Card>
-          </div>
+          <a href="https://github.com/bobo88/project-basis/tree/main/rollup-basis" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={RollupImg} />}
+              >
+                <Meta title="Rollup/Gulp" description="Rollup + Gulp + TS 配置项目" />
+              </Card>
+            </div>
+          </a>
         </Col>
         <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
-          <div className="card-item mb20">
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" className="case-item-img" src={NodeImg} />}
-            >
-              <Meta title="Express/Node" description="www.instagram.com" />
-            </Card>
-          </div>
+          <a href="https://github.com/bobo88/yuanbo_web" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={NodeImg} />}
+              >
+                <Meta title="Node/Koa/Nuxt" description="Node/Koa/Nuxt开发的网站" />
+              </Card>
+            </div>
+          </a>
         </Col>
         <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
-          <div className="card-item mb20">
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" className="case-item-img" src={HtmlImg} />}
-            >
-              <Meta title="html2canvas" description="www.instagram.com" />
-            </Card>
-          </div>
+          <a href="https://github.com/bobo88/project-basis/tree/main/html2canvas-basis" target='_blank' rel="noreferrer">
+            <div className="card-item mb20">
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" className="case-item-img" src={HtmlImg} />}
+              >
+                <Meta title="html2canvas" description="将HTML转成canvas图片" />
+              </Card>
+            </div>
+          </a>
         </Col>
-        {/* <Col className="gutter-row" span={{ xs: 24, sm: 12, md: 12, lg: 6 }}>
-          <div className="card-item mb20">
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<img alt="example" className="case-item-img" src={RollupImg} />}
-            >
-              <Meta title="X-mind" description="www.instagram.com" />
-            </Card>
-          </div>
-        </Col> */}
       </Row>
-      
-      
     </div>
   )
 };
