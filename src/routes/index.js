@@ -38,6 +38,11 @@ const routes = [
     path: '/about-me',
     element: <About />
   },
+  {
+    key: '404',
+    path: '/*',
+    element: <About />
+  },
 ];
 
 export default routes;
