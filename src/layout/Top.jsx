@@ -18,12 +18,12 @@ const Top = () => {
           </Col>
           <Col span={18}>
             {/* target="_blank" rel="noopener noreferrer" */}
-            <a className="link" href="http://docs.ycy88.com">Docs</a>
+            <a className="link" href="http://docs.ycy88.com">博客文档</a>
             {/* <NavLink to='home' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Docs</NavLink> */}
-            <NavLink to='project-cases' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Project cases</NavLink>
+            <NavLink to='project-cases' className={(navData) => (navData.isActive ? 'active link' : 'link')}>项目展示</NavLink>
             {/* <NavLink to='react' className={(navData) => (navData.isActive ? 'active link' : 'link')}>React</NavLink>
             <NavLink to='other' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Other</NavLink> */}
-            <NavLink to='about-me' className={(navData) => (navData.isActive ? 'active link' : 'link')}>About me</NavLink>
+            <NavLink to='about-me' className={(navData) => (navData.isActive ? 'active link' : 'link')}>关于我</NavLink>
           </Col>
         </Row>
       </div>
