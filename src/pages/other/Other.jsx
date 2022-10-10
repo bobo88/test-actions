@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Timeline } from 'antd';
+import { Timeline } from 'antd';
 import Parent from '@/components/cases/lifecircle/Parent'
 
 const App = function () {
