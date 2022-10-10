@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Timeline } from 'antd';
 import Parent from '@/components/cases/lifecircle/Parent'
 
 const App = function () {
-    const [msg] = useState('Nginx 负载均衡 Test');
+    // const [msg] = useState('Nginx 负载均衡 Test');
 
     return (
         <div className='main-wrap'>
