@@ -4,7 +4,7 @@ import React, { lazy } from "react";
 const Home = lazy(() => import('@/pages/Home'));
 const ProjectCases = lazy(() => import('@/pages/project-cases/ProjectCases'));
 // const ReactPage = lazy(() => import('@/pages/react/React'));
-// const OtherPage = lazy(() => import('@/pages/other/Other'));
+const OtherPage = lazy(() => import('@/pages/other/Other'));
 const About = lazy(() => import('@/pages/about/About'));
 
 const routes = [
@@ -28,11 +28,11 @@ const routes = [
   //   path: '/react',
   //   element: <ReactPage />
   // },
-  // {
-  //   key: 'other',
-  //   path: '/other',
-  //   element: <OtherPage />
-  // },
+  {
+    key: 'other',
+    path: '/other',
+    element: <OtherPage />
+  },
   {
     key: 'about',
     path: '/about-me',
