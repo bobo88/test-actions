@@ -2,6 +2,7 @@ import React from 'react';
 import { Timeline, Row, Col } from 'antd';
 import Parent from '@/components/cases/lifecircle/Parent'
 import ExampleClass, { ExampleHook } from '@/components/cases/hook/index'
+import ReduxTest from '@/components/cases/redux-test/index'
 
 const App = function () {
     // const [msg] = useState('Nginx 负载均衡 Test');
@@ -26,6 +27,10 @@ const App = function () {
                             <ExampleHook />
                         </Col>
                     </Row>
+                </Timeline.Item>
+                <Timeline.Item>
+                    <p>DEMO -- Redux Test</p>
+                    <ReduxTest />
                 </Timeline.Item>
             </Timeline>
         </div>
