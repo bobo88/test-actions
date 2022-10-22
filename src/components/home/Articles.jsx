@@ -47,7 +47,7 @@ const App = () => {
                   {
                     articles[cItem].map(item => {
                       return (
-                        <a href={`https://docs.ycy88.com${item[0]}.html`} target="_blank" key={item[0] + item[1]}>
+                        <a href={`https://docs.ycy88.com${item[0]}.html`} target="_blank" rel="noreferrer" key={item[0] + item[1]}>
                           <Button type="link">
                             { item[1] }
                           </Button>
