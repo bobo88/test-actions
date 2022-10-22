@@ -34,9 +34,6 @@ const Skills = () => {
       <a className="inline-block mr20 mb5" href="https://github.com/bobo88/xmind-web" target='_blank' rel="noreferrer">
         <Button type="primary">x-mind的技术类思维导图</Button>
       </a>
-      <a className="inline-block mr20 mb5" href="xxxx" target='_blank' rel="noreferrer">
-        <Button type="primary">html2canvas</Button>
-      </a>
     </div>
   )
 };
