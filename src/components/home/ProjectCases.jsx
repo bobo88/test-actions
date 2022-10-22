@@ -17,7 +17,7 @@ const { Meta } = Card;
 const Skills = () => {
   return (
     <div className="project-cases-box mb20">
-      <Divider orientation="left">Project cases</Divider>
+      <Divider orientation="left">项目源码 / DEMO</Divider>
 
       <Row gutter={16} justify="space-around">
         <Col className="gutter-row" xs={12} sm={12} md={8} lg={6} xl={6}>

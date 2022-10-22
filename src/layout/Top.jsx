@@ -18,7 +18,7 @@ const Top = () => {
           </Col>
           <Col span={18}>
             {/* target="_blank" rel="noopener noreferrer" */}
-            <a className="link" href="http://docs.ycy88.com">博客文档</a>
+            <a className="link" href="//docs.ycy88.com">博客文档</a>
             {/* <NavLink to='home' className={(navData) => (navData.isActive ? 'active link' : 'link')}>Docs</NavLink> */}
             <NavLink to='project-cases' className={(navData) => (navData.isActive ? 'active link' : 'link')}>项目展示</NavLink>
             {/* <NavLink to='react' className={(navData) => (navData.isActive ? 'active link' : 'link')}>React</NavLink>

@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '@/components/home/Banner'
 import Skills from '@/components/home/Skills'
 import ProjectCases from '@/components/home/ProjectCases'
+import Articles from '@/components/home/Articles'
 // import Counter from '@/components/Counter'
 
 const App = () => {
@@ -13,6 +14,9 @@ const App = () => {
 
             {/* 技能 */}
             <Skills />
+            
+            {/* 文章列表 */}
+            <Articles />
 
             {/* 项目案例 */}
             <ProjectCases />

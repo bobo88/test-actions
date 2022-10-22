@@ -7,7 +7,7 @@
  let env = API_PATH ||  '';
 
  axios.defaults.timeout = 100000;
- axios.defaults.baseURL = env || "http://www.ycy88.com/api";
+ axios.defaults.baseURL = env || "https://ycy88.com/apis";
  
  /**
   * http request 拦截器
@@ -128,13 +128,14 @@
  //统一接口处理，返回数据
 const HTTP =  function (fecth: string, url: string, param = {}) {
    let _data = "";
-   console.log(_data)
+   console.log(7888, _data)
    return new Promise((resolve, reject) => {
      switch (fecth) {
        case "get":
          console.log("begin a get request,and url:", url);
          get(url, param)
            .then(function (response) {
+            console.log(9999, response)
              resolve(response);
            })
            .catch(function (error) {
